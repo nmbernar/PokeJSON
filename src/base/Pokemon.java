@@ -18,24 +18,9 @@ public class Pokemon {
 	private int expGrowth;
 	private int evs;
 	
-	public Pokemon(String name, int num, Type type1, Type type2, int total, int hp, int att, int def, int spatt, int spdef, int spd){
-		this.name = name;
-		this.dexNumber = num;
-		this.primaryType = type1;
-		this.secondaryType = type2;
-		this.total = total;
-		this.hp = hp;
-		this.att = att;
-		this.def = def;
-		this.spatt = spatt;
-		this.spdef = spdef;
-		this.spd = spd;
+	public Pokemon(){
+
 	}
-
-
-	public Pokemon() {
-	}
-
 
 	public String getName() {
 		return name;
@@ -195,6 +180,18 @@ public class Pokemon {
 	public void setEvs(int evs) {
 		this.evs = evs;
 	}
+
+	@Override
+	public String toString() {
+		return "Pokemon [name=" + name + ", dexNumber=" + dexNumber
+				+ ", primaryType=" + primaryType + ", secondaryType="
+				+ secondaryType + ", total=" + total + ", hp=" + hp + ", att="
+				+ att + ", def=" + def + ", spatt=" + spatt + ", spdef="
+				+ spdef + ", spd=" + spd + ", height=" + height + ", weight="
+				+ weight + ", capRate=" + capRate + ", expGrowth=" + expGrowth
+				+ ", evs=" + evs + "]";
+	}
+	
 	
 	
 }
